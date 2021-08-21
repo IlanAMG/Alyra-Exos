@@ -10,7 +10,7 @@ contract Whitelist {
         Person memory person = Person(_name, _age);
     }
 
-    Person[] public people;
+    Person[] public persons;
 
     // RAPPELS :
     // Person memory person; // Déclaration d’une variable de type Person 
