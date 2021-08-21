@@ -4,4 +4,18 @@ contract Whitelist {
         string name;
         uint age;
     }
+    
+    function addPerson(string _name, uint _age) public { // Usage d’une fonction 
+        return Person memory person = Person(_name, _age);
+    }
+
+    addPerson("Ilan", 24)
+
+    // RAPPELS :
+    // Person memory person; // Déclaration d’une variable de type Person 
+    // person.name = "name"; // Initialisation du premier paramètre de la struct
+    // person.age = 30; // Initialisation du deuxième paramètre de la struct
+
+    // Person memory person = Person("name", 30); Déclaration d’une variable de type Person et son initialisation
+
 }
