@@ -6,11 +6,19 @@ contract Whitelist {
         uint age;
     }
     
+    Person[] public persons;
+
     function addPerson(string memory _name, uint _age) public { // Usage d’une fonction 
         Person memory person = Person(_name, _age);
     }
 
-    Person[] public persons;
+    function add(string memory _name, uint _age) public {
+        persons.push(addPerson(_name, _age));
+    }
+    function remove() public {
+        persons.pop();
+    }
+
 
     // RAPPELS :
     // Person memory person; // Déclaration d’une variable de type Person 

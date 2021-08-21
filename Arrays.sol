@@ -7,3 +7,7 @@
 
 // Vous pouvez également créer un ensemble de structures. En utilisant la structure Person :
 // Person[] public people; // un tableau dynamique de type Person, peut contenir n "Person"
+
+// people.length;
+// people.push(person);   
+// people.pop();
