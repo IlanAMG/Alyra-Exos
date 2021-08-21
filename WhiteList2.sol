@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity 0.6.11;
 contract Whitelist {
     struct Person {
@@ -5,11 +6,9 @@ contract Whitelist {
         uint age;
     }
     
-    function addPerson(string _name, uint _age) public { // Usage d’une fonction 
-        return Person memory person = Person(_name, _age);
+    function addPerson(string memory _name, uint _age) public { // Usage d’une fonction 
+        Person memory person = Person(_name, _age);
     }
-
-    addPerson("Ilan", 24)
 
     // RAPPELS :
     // Person memory person; // Déclaration d’une variable de type Person 
