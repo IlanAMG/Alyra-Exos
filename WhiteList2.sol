@@ -10,6 +10,8 @@ contract Whitelist {
         Person memory person = Person(_name, _age);
     }
 
+    Person[] public people;
+
     // RAPPELS :
     // Person memory person; // Déclaration d’une variable de type Person 
     // person.name = "name"; // Initialisation du premier paramètre de la struct
